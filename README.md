@@ -29,8 +29,16 @@ and Also steps needs to be followed to create Kafka Topic's for the data which g
 Further, a Mongo_DB Cluster with a Database and Collections to which the streamed Data needs to be dumped is also to be created.
 
 Once above steps is completed, execute the below files
+
 Run the main.py in Terminal 1, which streams data from each csv file one after the other
+```
+main.py
+```
+
 Run the kafka_consumer_all.py which reads data from each created Kafka Topics and dumps into the respective MongoDB Collection.
+```
+kafka_consumer_all.py
+```
 
 Subsequently, a DataBricks Environment with Compute Clusters attached is setup and the analysis of the data is being done. MongoDB-Spark.ipynb contains the sample code which does basic analysis and trasformation of the stored data from MongoDB. 
 
