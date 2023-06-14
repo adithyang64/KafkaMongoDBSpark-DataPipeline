@@ -10,8 +10,8 @@ from confluent_kafka.schema_registry.json_schema import JSONDeserializer
 from confluent_kafka.schema_registry import SchemaRegistryClient
 
 # MongoDB Atlas connection details
-mongo_username = "mongodb"
-mongo_password = "mongodb"
+mongo_username = ""
+mongo_password = ""
 mongo_clustername = "Kafka-Mongo"
 mongo_database = "kafka_mongo_covid_ds"
 mongo_collection1 = "case_1"
@@ -22,14 +22,14 @@ mongo_uri = f"mongodb+srv://mongodb:mongodb@kafka-mongo.cgjosxp.mongodb.net/?ret
 
 
 
-API_KEY = 'GHVGAQVJ3RSWJEKA'
+API_KEY = ''
 ENDPOINT_SCHEMA_URL  = 'https://psrc-znpo0.ap-southeast-2.aws.confluent.cloud'
-API_SECRET_KEY = 'g1rJY1gedecr723jMlYJnNEOtAVinFdcBnq+lsqpAVhJ5GWU3lXxrDP1gztETSmM'
+API_SECRET_KEY = ''
 BOOTSTRAP_SERVER = 'pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092'
 SECURITY_PROTOCOL = 'SASL_SSL'
 SSL_MECHANISM = 'PLAIN'
-SCHEMA_REGISTRY_API_KEY = 'GHV5DZXEKMAQQGGQ'
-SCHEMA_REGISTRY_API_SECRET = '91zPqTVUYyvF0wqjR7p4Z4np4k8x7nWGMVJhYPhqhkcttiUrI45I5YMbnW0r4NbQ'
+SCHEMA_REGISTRY_API_KEY = ''
+SCHEMA_REGISTRY_API_SECRET = ''
 
 
 def sasl_conf():
