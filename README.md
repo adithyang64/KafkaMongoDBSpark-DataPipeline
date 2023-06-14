@@ -23,7 +23,7 @@ Just for simplicity, we choose 3 CSV's as sample from the available dataset to b
 - DataBricks
 
 ## Setup 
-Kakfa needs to be setup (Confluent Kafka is bwing used here) 
+Kakfa needs to be setup (Confluent Kafka is being used here) 
 and Also steps needs to be followed to create Kafka Topic's for the data which gets streamed from those 3 CSV Files. And Proper Schema needs to be set for each topic as per the columns present in the csv file. 
 
 Further, a Mongo_DB Cluster with a Database and Collections to which the streamed Data needs to be dumped is also to be created.
@@ -35,7 +35,7 @@ Run the main.py in Terminal 1, which streams data from each csv file one after t
 main.py
 ```
 
-Run the kafka_consumer_all.py which reads data from each created Kafka Topics and dumps into the respective MongoDB Collection.
+Run the kafka_consumer_all.py in Terminal 2, which reads data from each created Kafka Topics and dumps into the respective MongoDB Collection.
 ```
 kafka_consumer_all.py
 ```
